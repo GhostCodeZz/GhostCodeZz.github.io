@@ -1,6 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>资源分享</title>
+    <url>/2021/01/28/%E8%B5%84%E6%BA%90%E5%88%86%E4%BA%AB/</url>
+    <content><![CDATA[<meta name="referrer" content="no-referrer"/>
+
+<p>ASA Project:<a href="https://pan.baidu.com/s/1RtueS3lfRVR2AprBPZpZxw">https://pan.baidu.com/s/1RtueS3lfRVR2AprBPZpZxw</a> 提取码:fy04</p>
+<p><img src="https://wx4.sinaimg.cn/mw690/006BOFtUgy1gn3qi6295fj30qo0qowgq.jpg" alt="haoye"></p>
+]]></content>
+      <tags>
+        <tag>资源</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Matlab学习</title>
     <url>/2021/02/03/Matlab%E5%AD%A6%E4%B9%A0/</url>
     <content><![CDATA[<p>有文档啥都好说</p>
@@ -14,12 +26,6 @@
 <figure class="highlight dns"><table><tr><td class="code"><pre><span class="line">%第一种</span><br><span class="line"><span class="keyword">A</span>(<span class="number">1</span>,<span class="number">1</span>) = &#123;[<span class="number">2,3;4,5</span>]&#125;<span class="comment">;</span></span><br><span class="line"><span class="keyword">A</span>(<span class="number">1</span>,<span class="number">2</span>) = &#123;&#x27;好耶！&#x27;&#125;<span class="comment">;</span></span><br><span class="line"><span class="keyword">A</span>(<span class="number">2</span>,<span class="number">1</span>) = &#123;<span class="number">114</span>+<span class="number">514</span>i&#125;<span class="comment">;</span></span><br><span class="line"><span class="keyword">A</span>(<span class="number">2</span>,<span class="number">2</span>) = &#123;-pi:pi:pi&#125;<span class="comment">;</span></span><br><span class="line"></span><br><span class="line">%第二种</span><br><span class="line"><span class="keyword">A</span>&#123;<span class="number">1</span>,<span class="number">1</span>&#125; = [<span class="number">2,3;4,5</span>]<span class="comment">;</span></span><br><span class="line"><span class="keyword">A</span>&#123;<span class="number">1</span>,<span class="number">2</span>&#125; = &#x27;好耶！&#x27;<span class="comment">;</span></span><br><span class="line"><span class="keyword">A</span>&#123;<span class="number">2</span>,<span class="number">1</span>&#125; = <span class="number">114</span>+<span class="number">514</span>i<span class="comment">;</span></span><br><span class="line"><span class="keyword">A</span>&#123;<span class="number">2</span>,<span class="number">2</span>&#125; = -pi:pi:pi<span class="comment">;</span></span><br></pre></td></tr></table></figure>
 <p>得到的A如下<br><a href="https://imgchr.com/i/yKq6oQ"><img src="https://s3.ax1x.com/2021/02/03/yKq6oQ.png" alt="yKq6oQ.png"></a></p>
 <p>未完待续。。。</p>
-]]></content>
-  </entry>
-  <entry>
-    <title>my-first-blog</title>
-    <url>/2021/01/28/my-first-blog/</url>
-    <content><![CDATA[<p>我的第一个博客，人生中第一个博客，今天是个值得纪念的日子，弄了半天博客还是进不去，我差点去世，于是重新搞了一遍，终于成功了。</p>
 ]]></content>
   </entry>
   <entry>
@@ -49,26 +55,19 @@
 <li><p>题目数据保证，在查找第 k 大元素时，数组中至少有 k 个元素</p>
 </li>
 </ul>
-<p>题目来源：<a href="https://leetcode-cn.com/problems/kth-largest-element-in-a-stream/">力扣703</a></p>
+<p>题目来源：<br><font color="#0000dd"><a href="https://leetcode-cn.com/problems/kth-largest-element-in-a-stream/">力扣703</a></font><br /></p>
 <p>根据题目要求，我们很快就明白，add()的作用是将一个新的数加入向量后，返回新向量中第三大的数。联想一下学过的数据结构课，堆(heap)很适合找出最值，我们很容易想到用两种方式。</p>
 <ol>
 <li>用最大堆去做。思路就是初始化的时候建堆，然后在add()函数中，添加一个元素时保持堆的性质，然后取k次堆顶元素，第k个就是我们要返回的数值，再把这k个数放回堆中，然后进入下一次add()。经过实践证明，这种方法数据一大就超时，建议使用下面一种方法。</li>
 <li>用最小堆去做。思路同样是初始化时建堆，但是不同的是，这次是最小堆，建完堆后如果堆中元素的个数大于k值，就移除最小值，直到堆中元素等于k值。这样堆顶元素就是我们需要的第k大的元素了，并且堆的元素个数保持为k，不会越来越大。在add()函数中,我们只要五步:插入元素-&gt;保持堆性质-&gt;删除堆顶元素-&gt;保持堆性质-&gt;返回堆顶元素。<br>代码如下:<figure class="highlight reasonml"><table><tr><td class="code"><pre><span class="line"><span class="keyword">class</span> KthLargest &#123;</span><br><span class="line">public:</span><br><span class="line">    vector&lt;<span class="built_in">int</span>&gt; vNum;  <span class="comment">//存放数据</span></span><br><span class="line">    <span class="built_in">int</span> k;  <span class="comment">//存放题目给的k值</span></span><br><span class="line"></span><br><span class="line">    <span class="constructor">KthLargest(<span class="params">int</span> <span class="params">k</span>, <span class="params">vector</span>&lt;<span class="params">int</span>&gt;&amp; <span class="params">nums</span>)</span> &#123;</span><br><span class="line">        make<span class="constructor">_heap(<span class="params">nums</span>.<span class="params">begin</span>()</span>, nums.<span class="keyword">end</span><span class="literal">()</span>, greater&lt;<span class="built_in">int</span>&gt;<span class="literal">()</span>);  <span class="comment">//建立最小堆</span></span><br><span class="line">        <span class="keyword">while</span> (nums.size<span class="literal">()</span> &gt; k) &#123;  <span class="comment">//删除最小堆中比第k大元素还要小的元素</span></span><br><span class="line">            pop<span class="constructor">_heap(<span class="params">nums</span>.<span class="params">begin</span>()</span>, nums.<span class="keyword">end</span><span class="literal">()</span>,greater&lt;<span class="built_in">int</span>&gt;<span class="literal">()</span>);  <span class="comment">//将堆顶元素移到尾部</span></span><br><span class="line">            nums.pop<span class="constructor">_back()</span>;  <span class="comment">//弹出尾部元素</span></span><br><span class="line">        &#125;</span><br><span class="line">        vNum = nums;</span><br><span class="line">        this-&gt;k = k;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="built_in">int</span> add(<span class="built_in">int</span> <span class="keyword">val</span>) &#123;</span><br><span class="line">        vNum.push<span class="constructor">_back(<span class="params">val</span>)</span>;  <span class="comment">//将给定数据插入尾部</span></span><br><span class="line">        push<span class="constructor">_heap(<span class="params">vNum</span>.<span class="params">begin</span>()</span>, vNum.<span class="keyword">end</span><span class="literal">()</span>, greater&lt;<span class="built_in">int</span>&gt;<span class="literal">()</span>);  <span class="comment">//保持最小堆性质</span></span><br><span class="line">        <span class="keyword">if</span> (vNum.size<span class="literal">()</span> &gt; k) &#123;  <span class="comment">//如果插入1个数据后数据的数量超过k个，就删除最小的数据</span></span><br><span class="line">            pop<span class="constructor">_heap(<span class="params">vNum</span>.<span class="params">begin</span>()</span>, vNum.<span class="keyword">end</span><span class="literal">()</span>, greater&lt;<span class="built_in">int</span>&gt;<span class="literal">()</span>);</span><br><span class="line">            vNum.pop<span class="constructor">_back()</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        return vNum.front<span class="literal">()</span>;  <span class="comment">//返回堆顶元素</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
-注释写的应该挺清楚了，就这样吧。<br><a href="https://imgchr.com/i/yPvumq"><img src="https://s3.ax1x.com/2021/01/29/yPvumq.jpg" alt="yPvumq.jpg"></a></li>
+注释写的应该挺清楚了，就这样吧。<br>[<img src="https://s3.ax1x.com/2021/01/29/yPvumq.jpg" alt="yPvumq.jpg">](<a href="https://imgchr.com/i/yPvumq%EF%BC%89">https://imgchr.com/i/yPvumq）</a></li>
 </ol>
 ]]></content>
   </entry>
   <entry>
-    <title>资源分享</title>
-    <url>/2021/01/28/%E8%B5%84%E6%BA%90%E5%88%86%E4%BA%AB/</url>
-    <content><![CDATA[<meta name="referrer" content="no-referrer"/>
-
-<p>ASA Project:<a href="https://pan.baidu.com/s/1Hn_Ogib_tG0H9BbBHdc5pw">https://pan.baidu.com/s/1Hn_Ogib_tG0H9BbBHdc5pw</a> 提取码：d51g(炸了)</p>
-<p><a href="https://pan.baidu.com/s/1o5e8cDtV-ZHkNI2N77PGNg">https://pan.baidu.com/s/1o5e8cDtV-ZHkNI2N77PGNg</a> 提取码:43k1</p>
-<p><img src="https://wx4.sinaimg.cn/mw690/006BOFtUgy1gn3qi6295fj30qo0qowgq.jpg" alt="haoye"></p>
+    <title>my-first-blog</title>
+    <url>/2021/01/28/my-first-blog/</url>
+    <content><![CDATA[<p>我的第一个博客，人生中第一个博客，今天是个值得纪念的日子，弄了半天博客还是进不去，我差点去世，于是重新搞了一遍，终于成功了。</p>
 ]]></content>
-      <tags>
-        <tag>资源</tag>
-      </tags>
   </entry>
 </search>
