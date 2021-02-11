@@ -6,7 +6,7 @@
   <link href="http://voidpointer.xyz/atom.xml" rel="self"/>
   
   <link href="http://voidpointer.xyz/"/>
-  <updated>2021-01-29T12:25:29.923Z</updated>
+  <updated>2021-02-11T08:38:59.958Z</updated>
   <id>http://voidpointer.xyz/</id>
   
   <author>
@@ -15,6 +15,44 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>数据流中的第K大元素</title>
+    <link href="http://voidpointer.xyz/2021/02/11/%E6%95%B0%E6%8D%AE%E6%B5%81%E4%B8%AD%E7%9A%84%E7%AC%ACK%E5%A4%A7%E5%85%83%E7%B4%A0/"/>
+    <id>http://voidpointer.xyz/2021/02/11/%E6%95%B0%E6%8D%AE%E6%B5%81%E4%B8%AD%E7%9A%84%E7%AC%ACK%E5%A4%A7%E5%85%83%E7%B4%A0/</id>
+    <published>2021-02-11T07:59:26.000Z</published>
+    <updated>2021-02-11T08:38:59.958Z</updated>
+    
+    
+      
+      
+    <summary type="html">&lt;h3 id=&quot;设计一个找到数据流中第-k-大元素的类（class）。注意是排序后的第-k-大元素，不是第-k-个不同的元素。&quot;&gt;&lt;a href=&quot;#设计一个找到数据流中第-k-大元素的类（class）。注意是排序后的第-k-大元素，不是第-k-个不同的元素。&quot; class=&quot;h</summary>
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Matlab学习</title>
+    <link href="http://voidpointer.xyz/2021/02/03/Matlab%E5%AD%A6%E4%B9%A0/"/>
+    <id>http://voidpointer.xyz/2021/02/03/Matlab%E5%AD%A6%E4%B9%A0/</id>
+    <published>2021-02-03T04:32:34.000Z</published>
+    <updated>2021-02-11T08:37:05.909Z</updated>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;有文档啥都好说&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://ww2.mathworks.cn/help/matlab/index.html&quot;&gt;Matlab官方文档&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&quot;数据结构&quot;&gt;&lt;a href=&quot;#数据结构&quot; class=&quot;headerli</summary>
+      
+    
+    
+    
+    
+  </entry>
   
   <entry>
     <title>资源分享</title>
